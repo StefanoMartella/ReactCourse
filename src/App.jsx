@@ -1,8 +1,10 @@
 import React from "react";
 import Animal from "./components/Animal";
 import BeerTable from "./components/BeerTable";
+import Counter from "./components/Counter";
 import List from "./components/List";
 import Person from "./components/Person";
+import ShowMore from "./components/ShowMore";
 
 const list = [
   { name: "Name 1", surname: "Surname 1" },
@@ -30,7 +32,7 @@ function App() {
 
       {/* <List list={list} /> */}
 
-      <BeerTable
+      {/* <BeerTable
         beers={[
           {
             id: 0,
@@ -103,7 +105,30 @@ function App() {
             price: "$17.99",
           },
         ]}
-      />
+      /> */}
+
+      {/* <Counter /> */}
+
+      <ShowMore maxLength={20}>
+        Officia enim cupidatat et labore laborum non. Esse aliqua voluptate et
+        dolor in. Occaecat ipsum nisi et nulla. Ipsum nisi amet ut incididunt
+        esse officia nostrud elit amet anim minim incididunt tempor. Est enim
+        incididunt aliqua irure ullamco cupidatat incididunt consequat nisi enim
+        sunt aute irure. Sit nisi ex officia incididunt cupidatat deserunt ut
+        eiusmod quis nulla. Qui labore velit veniam deserunt anim. Dolore minim
+        aute exercitation ipsum sit qui ad.
+      </ShowMore>
+      <br />
+      <br />
+      <ShowMore maxLength={50}>
+        Officia enim cupidatat et labore laborum non. Esse aliqua voluptate et
+        dolor in. Occaecat ipsum nisi et nulla. Ipsum nisi amet ut incididunt
+        esse officia nostrud elit amet anim minim incididunt tempor. Est enim
+        incididunt aliqua irure ullamco cupidatat incididunt consequat nisi enim
+        sunt aute irure. Sit nisi ex officia incididunt cupidatat deserunt ut
+        eiusmod quis nulla. Qui labore velit veniam deserunt anim. Dolore minim
+        aute exercitation ipsum sit qui ad.
+      </ShowMore>
     </>
   );
 }
