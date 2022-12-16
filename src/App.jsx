@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from "./components/Accordion";
 import Animal from "./components/Animal";
 import BeerTable from "./components/BeerTable";
 import Counter from "./components/Counter";
@@ -109,7 +110,7 @@ function App() {
 
       {/* <Counter /> */}
 
-      <ShowMore maxLength={20}>
+      {/* <ShowMore maxLength={20}>
         Officia enim cupidatat et labore laborum non. Esse aliqua voluptate et
         dolor in. Occaecat ipsum nisi et nulla. Ipsum nisi amet ut incididunt
         esse officia nostrud elit amet anim minim incididunt tempor. Est enim
@@ -128,7 +129,27 @@ function App() {
         sunt aute irure. Sit nisi ex officia incididunt cupidatat deserunt ut
         eiusmod quis nulla. Qui labore velit veniam deserunt anim. Dolore minim
         aute exercitation ipsum sit qui ad.
-      </ShowMore>
+      </ShowMore> */}
+
+      <Accordion
+        items={[
+          {
+            id: 0,
+            title: "Titolo 1",
+            body: "Nulla id ad mollit exercitation ex. Commodo ullamco cillum ut anim enim Lorem tempor minim ut laboris duis ipsum commodo. Duis pariatur dolor deserunt eu sint dolore fugiat anim voluptate ea dolore incididunt. Lorem qui ipsum Lorem incididunt nisi officia esse veniam do magna. Commodo culpa aute amet laboris et pariatur velit culpa cillum mollit quis enim velit. Lorem incididunt pariatur pariatur do dolor consequat anim commodo pariatur ullamco.",
+          },
+          {
+            id: 1,
+            title: "Titolo 2",
+            body: "Nulla id ad mollit exercitation ex. Commodo ullamco cillum ut anim enim Lorem tempor minim ut laboris duis ipsum commodo. Duis pariatur dolor deserunt eu sint dolore fugiat anim voluptate ea dolore incididunt. Lorem qui ipsum Lorem incididunt nisi officia esse veniam do magna. Commodo culpa aute amet laboris et pariatur velit culpa cillum mollit quis enim velit. Lorem incididunt pariatur pariatur do dolor consequat anim commodo pariatur ullamco.",
+          },
+          {
+            id: 2,
+            title: "Titolo 3",
+            body: "Nulla id ad mollit exercitation ex. Commodo ullamco cillum ut anim enim Lorem tempor minim ut laboris duis ipsum commodo. Duis pariatur dolor deserunt eu sint dolore fugiat anim voluptate ea dolore incididunt. Lorem qui ipsum Lorem incididunt nisi officia esse veniam do magna. Commodo culpa aute amet laboris et pariatur velit culpa cillum mollit quis enim velit. Lorem incididunt pariatur pariatur do dolor consequat anim commodo pariatur ullamco.",
+          },
+        ]}
+      />
     </>
   );
 }
